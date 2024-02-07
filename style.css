@@ -1,0 +1,170 @@
+:root {
+  --std-w: 900px;
+  /*standard width*/
+}
+
+body {
+
+  /* background */
+  background-color: white;
+  background-image: url('');
+
+  /* text */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+
+  /* padding/margins */
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+
+}
+
+
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {}
+
+a {}
+
+a:visited {
+  color: inherit
+}
+
+
+
+ol {}
+
+ol li {}
+
+
+ul {}
+
+ul li {}
+
+
+
+button {
+  background-color: white;
+  border: 0.5rem outset red;
+  border-radius: 40px;
+  color: #474747;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 32px;
+  cursor: pointer;
+  /* GET RID OF THE DUMB UNDERLINESSS*/
+}
+
+
+
+/* Select and style elements by class name or ID */
+
+
+/* Example: This styles elements with class="header"*/
+.header {}
+
+
+/* Example: This styles an element with an id="header-img" */
+#header-img {}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: cornflowerblue;
+}
+
+div {
+  width: var(--std-w);
+  border: 15px;
+  padding: 50px;
+  margin: auto;
+}
+
+#footer-content {
+  background-color: cornflowerblue;
+  color: white;
+  width: auto;
+}
+
+
+/* Part 1: Navbar */
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style: none;
+  background-color: #dddddd;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: var(--std-w)
+    /*width: 100%; this puts gap at start and end at end*/
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: left;
+}
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  font-family: Arial;
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.active {
+  background-color: cornflowerblue;
+}
+
+/* Part 2: Flexbox */
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {}
+
+/* Style set for all flex-items */
+.flex-item {
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
