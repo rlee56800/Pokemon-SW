@@ -6,7 +6,7 @@
 body {
 
   /* background */
-  background-color: white;
+  background-color: rgb(7, 7, 135);
   background-image: url('');
 
   /* text */
@@ -28,15 +28,13 @@ body {
 
 }
 
-
-
-h1 {}
-
-h2 {}
-
-h3 {}
-
-p {}
+div {
+  background-color: rgba(255, 255, 255, 0.813);
+  width: var(--std-w);
+  border: 15px;
+  padding: 50px;
+  margin: auto;
+}
 
 a {
   color: inherit
@@ -45,19 +43,6 @@ a {
 a:visited {
   color: inherit
 }
-
-
-
-ol {}
-
-ol li {}
-
-
-ul {}
-
-ul li {}
-
-
 
 button {
   background-color: white;
@@ -73,17 +58,6 @@ button {
 }
 
 
-
-/* Select and style elements by class name or ID */
-
-
-/* Example: This styles elements with class="header"*/
-.header {}
-
-
-/* Example: This styles an element with an id="header-img" */
-#header-img {}
-
 .footer {
   position: fixed;
   left: 0;
@@ -92,12 +66,6 @@ button {
   background-color: cornflowerblue;
 }
 
-div {
-  width: var(--std-w);
-  border: 15px;
-  padding: 50px;
-  margin: auto;
-}
 
 #footer-content {
   background-color: cornflowerblue;
@@ -108,6 +76,14 @@ div {
 
 /* Part 1: Navbar */
 /* General style rule set for all items in ul */
+.navbar {
+  border: 0;
+  padding: 0;
+  background-color: #ff11d3;
+  width: auto;
+  height: 50px;
+}
+
 .navbar ul {
   list-style: none;
   background-color: #dddddd;
@@ -116,7 +92,6 @@ div {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: var(--std-w)
     /*width: 100%; this puts gap at start and end at end*/
 }
 
@@ -129,7 +104,7 @@ div {
 .navbar ul li a {
   font-family: Arial;
   color: black;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
   display: block;
   padding: 8px;
