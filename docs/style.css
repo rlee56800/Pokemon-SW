@@ -6,7 +6,7 @@
 body {
 
   /* background */
-  background-color: rgb(7, 7, 135);
+  background-color: rgb(19, 72, 170);
   background-image: url('');
 
   /* text */
@@ -76,49 +76,45 @@ button {
 
 /* Part 1: Navbar */
 /* General style rule set for all items in ul */
-.navbar {
-  border: 0;
-  padding: 0;
-  background-color: #ff11d3;
-  width: auto;
-  height: 50px;
-}
-
 .navbar ul {
   list-style: none;
-  background-color: #dddddd;
+  background-color: #690909;
+  color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
   overflow: hidden;
   position: fixed;
   top: 0;
-    /*width: 100%; this puts gap at start and end at end*/
+  left: 0;
+  width: 100%;
 }
 
 /* Style rule set for individual li */
 .navbar ul li {
   float: left;
+  display: table-cell;
 }
 
 /* Style rule set for individual li link */
 .navbar ul li a {
   font-family: Arial;
-  color: black;
   font-size: 30px;
   text-decoration: none;
-  display: block;
+  display: table-cell;
   padding: 8px;
-  background-color: #dddddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 /* Style rule set for hovered link */
 .navbar ul li a:hover {
-  background-color: #555555;
-  color: white;
+  background-color: #430e0e;
 }
 
-.active {
-  background-color: cornflowerblue;
+/*.active {
+  background-color: #cb3b3b;
+  color: black;
 }
 
 /* Part 2: Flexbox */
