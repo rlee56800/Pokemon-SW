@@ -6,7 +6,7 @@
 body {
 
   /* background */
-  background-color: white;
+  background-color: rgb(19, 72, 170);
   background-image: url('');
 
   /* text */
@@ -28,15 +28,13 @@ body {
 
 }
 
-
-
-h1 {}
-
-h2 {}
-
-h3 {}
-
-p {}
+div {
+  background-color: rgba(255, 255, 255, 0.813);
+  width: var(--std-w);
+  border: 15px;
+  padding: 50px;
+  margin: auto;
+}
 
 a {
   color: inherit
@@ -45,19 +43,6 @@ a {
 a:visited {
   color: inherit
 }
-
-
-
-ol {}
-
-ol li {}
-
-
-ul {}
-
-ul li {}
-
-
 
 button {
   background-color: white;
@@ -73,17 +58,6 @@ button {
 }
 
 
-
-/* Select and style elements by class name or ID */
-
-
-/* Example: This styles elements with class="header"*/
-.header {}
-
-
-/* Example: This styles an element with an id="header-img" */
-#header-img {}
-
 .footer {
   position: fixed;
   left: 0;
@@ -92,12 +66,6 @@ button {
   background-color: cornflowerblue;
 }
 
-div {
-  width: var(--std-w);
-  border: 15px;
-  padding: 50px;
-  margin: auto;
-}
 
 #footer-content {
   background-color: cornflowerblue;
@@ -110,40 +78,43 @@ div {
 /* General style rule set for all items in ul */
 .navbar ul {
   list-style: none;
-  background-color: #dddddd;
+  background-color: #690909;
+  color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: var(--std-w)
-    /*width: 100%; this puts gap at start and end at end*/
+  left: 0;
+  width: 100%;
 }
 
 /* Style rule set for individual li */
 .navbar ul li {
   float: left;
+  display: table-cell;
 }
 
 /* Style rule set for individual li link */
 .navbar ul li a {
   font-family: Arial;
-  color: black;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
-  display: block;
+  display: table-cell;
   padding: 8px;
-  background-color: #dddddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 /* Style rule set for hovered link */
 .navbar ul li a:hover {
-  background-color: #555555;
-  color: white;
+  background-color: #430e0e;
 }
 
-.active {
-  background-color: cornflowerblue;
+/*.active {
+  background-color: #cb3b3b;
+  color: black;
 }
 
 /* Part 2: Flexbox */
